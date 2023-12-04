@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arcade</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    />
 </head>
 <body>
-<div class="flex justify-center items-center h-screen">
-    <div class="absolute bg-indigo-500 max-w-xl mx-auto w-full max-h-96 my-auto h-full flex justify-around items-center">
-        <div class="bg-red-500 h-16 w-16"></div>
-        <div class="bg-red-500 h-16 w-16"></div>
-    </div>
-    <div class="relative top-32 left-56 flex justify-around space-x-8 items-center">
-        <div class="bg-blue-500 h-8 w-8 "></div>
-        <div class="bg-blue-500 h-8 w-8 "></div>
-        <div class="bg-blue-500 h-8 w-8 "></div>
-    </div>
-    <div class="relative top-32 right-56 flex justify-around space-x-8 items-center">
-        <div class="bg-blue-500 h-8 w-8 "></div>
-        <div class="bg-blue-500 h-8 w-8 "></div>
-        <div class="bg-blue-500 h-8 w-8 "></div>
-    </div>
+<div class="wrapper">
+    <div class="title">GAME TIME</div>
+    <a href="#"
+    ><div id="cfs-btn" class="game 1">Carta, Forbici, Sasso</div></a
+    >
+    <a href="#"><div id="imp-btn" class="game 2">L'impiccato</div></a>
+
+    <a href="#"><div id="pd-btn" class="game 3">Pari o Dispari</div></a>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
