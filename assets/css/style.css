@@ -29,5 +29,10 @@ body{
     background-color: purple;
     padding: 30px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapper a{
     color: white;
+    text-decoration: none;
 }
