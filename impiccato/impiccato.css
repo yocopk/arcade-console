@@ -29,13 +29,13 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .title{
     font-size: 40px;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #title-impiccato {
@@ -46,7 +46,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 440px;
+    width: 380px;
     gap: 5px;
     flex-wrap: wrap;
     animation: fadeIn 4s;
@@ -54,9 +54,10 @@ body{
 }
 
 .lettera-alfabeto {
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
+    user-select: none;
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
     background-color: purple;
     color: white;
     border-radius: 2px;
@@ -66,10 +67,18 @@ body{
     background-color: grey;
 }
 
+#parola-nascosta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
 .lettera{
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
     color: white;
     display: flex;
     align-items: center;
@@ -79,26 +88,18 @@ body{
 
 .hidden-lettera{
     border-bottom: 2px solid white;
-    height: 30px;
-    width: 30px;
+    height: 18px;
+    width: 18px;
     font-size: 0px;
     animation: fadeIn 6s;
     /* animation-delay: 6s; */
 }
 
 .lettera-non-indovinata{
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
     color: red;
-}
-
-
-#parola-nascosta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
 }
 
 #errori {
@@ -109,14 +110,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
+    height: 280px;
     width: 400px;
     text-align: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 15px;
     border-radius: 10px;
     animation: fadeIn 3s;
 }
@@ -132,7 +133,8 @@ body{
 .end .btn button, .end .btn a {
     background-color: transparent;
     color: white;
-    font-size: 15px;
+    text-decoration: none;
+    font-size: 10px;
     border: none;
     cursor: pointer;
 }
