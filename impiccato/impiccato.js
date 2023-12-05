@@ -39,10 +39,10 @@ let parolaDaIndovinare = [
 ];
 
 let parolaSplittata = parolaDaIndovinare[parolaCasuale()].split("");
-console.log(parolaSplittata);
+// console.log(parolaSplittata);
 
 let lunghezzaParola = parolaSplittata.length;
-console.log(lunghezzaParola);
+// console.log(lunghezzaParola);
 
 for (let i = 0; i < lunghezzaParola; i++) {
 
@@ -179,7 +179,7 @@ function rigioca(vittoria) {
     } 
 
     for (let i = 0; i<26; i++) {
-        console.log(i);
+        // console.log(i);
         bottoni[i].disabled = false;
     }
 
