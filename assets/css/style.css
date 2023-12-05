@@ -38,7 +38,8 @@ body{
     width: 420px;
     padding: 30px;
     cursor: pointer;
-    border-radius: 5px;
+    border: 2px solid white;
+    /* border-radius: 5px; */
     /* border-bottom: 10px solid rgb(63, 0, 63);
   border-right: 10px solid rgb(97, 0, 97);
   border-top: 10px solid rgb(73, 0, 73);
@@ -54,4 +55,5 @@ body{
 .wrapper a{
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }

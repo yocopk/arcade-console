@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Arcade</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sasso, Carta, Forbici</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/assets/css/carta-forbice-sasso.css" />
     <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
     />
-</head>
-<body>
-<div class="flex justify-center items-center h-screen text-white p-2">
-    <div class="bg-slate-900 max-w-2xl mx-auto w-full max-h-96 my-auto h-full flex flex-col justify-around ring-2 ring-gray-300 rounded-xl p-2">
-        <div class="flex justify-around space-x-8 items-center flex-col md:flex-row">
-            <h3 id="playerPoint" class="text-sm">Punteggio: 0</h3>
-            <h3 id="result" class="text-center text-xl"></h3>
-            <h3 id="computerPoint" class="text-sm">Punteggio: 0</h3>
+  </head>
+  <body>
+    <div class="flex justify-center mb-[65px] h-screen text-white p-2">
+      <div
+        class="max-w-2xl mx-auto w-full max-h-96 my-auto h-full flex flex-col justify-around pl-24 p-10"
+      >
+        <div
+          class="flex justify-around space-x-8 items-center flex-col md:flex-row"
+        >
+          <h3 id="playerPoint" class="text-sm">Punteggio: 0</h3>
+          <h3 id="result" class="text-center text-xl"></h3>
+          <h3 id="computerPoint" class="text-sm">Punteggio: 0</h3>
         </div>
         <div class="flex justify-around items-center">
-            <img id="playerHand" class="h-16 w-16 animate-bounce" src="../assets/sasso.svg"
-                 alt="sasso player"/>
-            <img id="computerHand" class="h-16 w-16 animate-bounce" src="../assets/sasso.svg"
-                 alt="sasso computer"/>
+          <img
+            id="playerHand"
+            class="h-16 w-16 animate-bounce"
+            src="../assets/sasso.svg"
+            alt="sasso player"
+          />
+          <img
+            id="computerHand"
+            class="h-16 w-16 animate-bounce"
+            src="../assets/sasso.svg"
+            alt="sasso computer"
+          />
         </div>
         <div class="flex justify-around space-x-8 items-center">
-            <div class="flex flex-col space-y-2 items-center">
-                <button id="sasso" class="h-6 w-6 hover:scale-125 duration-200 ease-out"
-                        style="background-image: url('/assets/sasso.svg')"
-                        onclick="keyHandler('sasso')"></button>
-                <h3 class="text-xs">Sasso</h3>
-            </div>
-            <div class="flex flex-col space-y-2 items-center">
-                <button id="forbice" class="h-8 w-8 hover:scale-125 duration-200 ease-out"
-                        style="background-image: url('/assets/forbice.svg')"
-                        onclick="keyHandler('forbice')"></button>
-                <h3 class="text-xs">Forbice</h3>
-            </div>
-            <div class="flex flex-col space-y-2 items-center">
-                <button id="carta" class="h-8 w-8 hover:scale-125 duration-200 ease-out"
-                        style="background-image: url('/assets/carta.svg')"
-                        onclick="keyHandler('carta')"></button>
-                <h3 class="text-xs">Carta</h3>
-            </div>
+          <div class="flex flex-col space-y-2 items-center">
+            <button
+              id="sasso"
+              class="h-6 w-6 hover:scale-125 duration-200 ease-out"
+              style="background-image: url('/assets/sasso.svg')"
+              onclick="keyHandler('sasso')"
+            ></button>
+            <h3 class="text-xs">Sasso</h3>
+          </div>
+          <div class="flex flex-col space-y-2 items-center">
+            <button
+              id="forbice"
+              class="h-8 w-8 hover:scale-125 duration-200 ease-out"
+              style="background-image: url('/assets/forbice.svg')"
+              onclick="keyHandler('forbice')"
+            ></button>
+            <h3 class="text-xs">Forbice</h3>
+          </div>
+          <div class="flex flex-col space-y-2 items-center">
+            <button
+              id="carta"
+              class="h-8 w-8 hover:scale-125 duration-200 ease-out"
+              style="background-image: url('/assets/carta.svg')"
+              onclick="keyHandler('carta')"
+            ></button>
+            <h3 class="text-xs">Carta</h3>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<script src="carta-forbice-sasso.js"></script>
-</body>
+    <script src="carta-forbice-sasso.js"></script>
+  </body>
 </html>

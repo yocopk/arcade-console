@@ -2,12 +2,15 @@
     font-family: 'Press Start 2P', sans-serif;
 }
 body {
+    background-image: url(../img/bgmachine.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #333;
 }
 
 .memory-game {
@@ -25,10 +28,10 @@ body {
 
 .container{
     display: flex;
-    justify-content: center;
+    margin-bottom: 120px;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
 }
 
 .container h1{

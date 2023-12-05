@@ -3,71 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
     />
-    <link rel="stylesheet" href="impiccato.css">
-    <title> </title>
+    <link rel="stylesheet" href="impiccato.css" />
+    <title>L'impiccato</title>
   </head>
   <body>
     <div class="wrapper">
-        <h1 class="title" id="title-impiccato">L'IMPICCATO</h1>
-        <div class="end hidden" id="you-lose">
-            GAME OVER
-            <div class="btn">
-                <button onclick="rigioca(false)">rigioca</button>
-                <a href="../index.html">pagine iniziale</a>
-            </div>
-            <div class="punteggio"></div>
+      <h1 class="title" id="title-impiccato">L'IMPICCATO</h1>
+      <div class="end hidden" id="you-lose">
+        GAME OVER
+        <div class="btn">
+          <button onclick="rigioca(false)">rigioca</button>
+          <a href="../index.html">pagine iniziale</a>
         </div>
+        <div class="punteggio"></div>
+      </div>
 
-        <div class="end hidden" id="you-win">
-            HAI VINTO!
-            <div class="btn">
-                <button onclick="rigioca(true)">nuova parola</button>
-                <a href="../index.html">pagine iniziale</a>
-            </div>
-            <div class="punteggio"></div>
+      <div class="end hidden" id="you-win">
+        HAI VINTO!
+        <div class="btn">
+          <button onclick="rigioca(true)">nuova parola</button>
+          <a href="../index.html">pagine iniziale</a>
         </div>
+        <div class="punteggio"></div>
+      </div>
 
-       
-        <div class="lettere-alfabeto" id="tastiera">
-    
-            <button class="lettera-alfabeto" onclick="premiLettera('A', this)">A</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('B',this)">B</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('C',this)">C</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('D',this)">D</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('E',this)">E</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('F',this)">F</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('G',this)">G</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('H',this)">H</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('I',this)">I</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('J',this)">J</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('K',this)">K</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('L',this)">L</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('M',this)">M</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('N',this)">N</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('O',this)">O</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('P',this)">P</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('Q',this)">Q</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('R',this)">R</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('S',this)">S</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('T',this)">T</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('U',this)">U</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('V',this)">V</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('W',this)">W</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('X',this)">X</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('Y',this)">Y</button>
-            <button class="lettera-alfabeto" onclick="premiLettera('Z',this)">Z</button>
-    
-        </div>
-        
-        
-        <div id="parola-nascosta"></div>
-        <div id="errori"></div>
+      <div class="lettere-alfabeto" id="tastiera">
+        <button class="lettera-alfabeto" onclick="premiLettera('A', this)">
+          A
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('B',this)">
+          B
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('C',this)">
+          C
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('D',this)">
+          D
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('E',this)">
+          E
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('F',this)">
+          F
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('G',this)">
+          G
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('H',this)">
+          H
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('I',this)">
+          I
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('J',this)">
+          J
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('K',this)">
+          K
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('L',this)">
+          L
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('M',this)">
+          M
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('N',this)">
+          N
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('O',this)">
+          O
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('P',this)">
+          P
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('Q',this)">
+          Q
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('R',this)">
+          R
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('S',this)">
+          S
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('T',this)">
+          T
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('U',this)">
+          U
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('V',this)">
+          V
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('W',this)">
+          W
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('X',this)">
+          X
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('Y',this)">
+          Y
+        </button>
+        <button class="lettera-alfabeto" onclick="premiLettera('Z',this)">
+          Z
+        </button>
+      </div>
 
+      <div id="parola-nascosta"></div>
+      <div id="errori"></div>
     </div>
 
     <script src="impiccato.js"></script>
