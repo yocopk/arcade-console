@@ -17,3 +17,21 @@ body{
     height: 100vh;
 }
 
+a button{
+    background-color: purple;
+    /* border-style: outset; */
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: transform .2s ease-in-out;
+}
+
+a button:hover{
+    transform: scale(1.03);
+    background-color: rgb(99, 0, 99);
+}
+
