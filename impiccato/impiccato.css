@@ -1,0 +1,41 @@
+
+.lettere-alfabeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.lettera-alfabeto {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.lettera{
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hidden{
+    border-bottom: 2px solid white;
+    height: 40px;
+    width: 40px;
+    font-size: 0px;
+    
+}
+
+
+#parola-nascosta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
