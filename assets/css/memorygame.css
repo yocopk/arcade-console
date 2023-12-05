@@ -32,6 +32,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    margin-left: 40px;
 }
 
 .container h1{

@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Arcade</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testa o Croce</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="./testa-croce.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./testa-croce.css" />
     <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
     />
-</head>
-<body>
-<div class="flex justify-center items-center h-screen text-white">
-    <div class="bg-gray-200 max-w-2xl mx-auto w-full max-h-96 my-auto h-full flex flex-col justify-around ring-2 ring-gray-300 rounded-xl py-2 px-24">
-        <div class="flex justify-around items-center space-y-8 flex-col">
-            <div id="coin" class="w-48 h-48">
-                <img src="../assets/testa.jpg"
-                     alt="Heads"
-                />
-            </div>
-            <p class="font-bold text-black" id="result"></p>
-            <button id="btn"
-                    class="bg-gray-500 p-2 hover:bg-gray-700 duration-200 ease-out focus:ring focus:ring-violet-300">
-                Lancia
-            </button>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source
+        src="/assets/sounds/music_arcade_gaming_cut.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <div class="flex justify-center items-center h-screen text-white">
+      <div
+        class="max-w-2xl mx-auto w-full max-h-96 my-auto h-full flex flex-col justify-around ml-12 py-2 px-24"
+      >
+        <div class="flex justify-around items-center space-y-8 flex-col pb-20">
+          <h1>
+            Tira una moneta per avere la risposta ad una scelta esistenziale.
+          </h1>
+          <div id="coin" class="w-48 h-48">
+            <img src="../assets/testa.png" alt="Heads" />
+          </div>
+          <p class="font-bold text-white" id="result"></p>
+          <button
+            id="btn"
+            class="bg-gray-500 p-2 hover:bg-gray-700 duration-200 ease-out focus:ring focus:ring-violet-300"
+          >
+            Lancia
+          </button>
         </div>
+      </div>
     </div>
-</div>
-<script src="testa-croce.js"></script>
-</body>
+    <script src="testa-croce.js"></script>
+  </body>
 </html>
