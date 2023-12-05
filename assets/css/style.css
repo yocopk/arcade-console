@@ -6,8 +6,11 @@
 }
 
 body{
-    background-color: #333;
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDloZzgwdjZ3Y2F5aHBkbWFxOXZ3bWFhMzU5NDkycDJuNDRibWgxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PdSkWr8JRBQEkcoQkQ/giphy.gif");
     display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -18,19 +21,34 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
     align-items: center;
 }
 
 .title{
-    font-size: 40px;
+    font-size: 65px;
     color: white;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #FF0000, 0 0 15px #0000FF;
 }
 
 .game{
     background-color: purple;
+    /* border-style: outset; */
+    width: 420px;
     padding: 30px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    /* border-bottom: 10px solid rgb(63, 0, 63);
+  border-right: 10px solid rgb(97, 0, 97);
+  border-top: 10px solid rgb(73, 0, 73);
+  border-left: 10px solid rgb(104, 0, 104); */
+    transition: transform .2s ease-in-out;
+}
+
+.game:hover{
+    transform: scale(1.08);
+    background-color: rgb(99, 0, 99);
 }
 
 .wrapper a{
