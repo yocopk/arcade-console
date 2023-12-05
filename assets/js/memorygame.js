@@ -103,3 +103,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createBoard();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const resetButton = document.getElementById("reset-btn");
+  resetButton.addEventListener("click", resetGame);
+
+  function resetGame() {
+    const allCards = document.querySelectorAll(".card");
+    allCards.forEach((card) => {
+      card.classList.remove("flip", "matched");
+    });
+
+    flippedCards = [];
+    matchedCards = [];
+
+    createBoard();
+  }
+});
