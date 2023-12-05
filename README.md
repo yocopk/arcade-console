@@ -14,7 +14,7 @@ Benvenuto su **Game Time**, un sito web che offre un'esperienza di gioco arcade 
     
 -   **Memory Game:** Ricorda i simboli e forma le coppie esatte.
     
--   **Testa o Croce** Tira una moneta per avere la risposta ad una scelta esistenziale.
+-   **Testa o Croce:** Tira una moneta per avere la risposta ad una scelta esistenziale.
     
 
 ## Grafica Coinvolgente
