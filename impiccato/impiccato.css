@@ -1,35 +1,62 @@
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#title-impiccato {
+    animation: fadeIn 2s;
+}
+
 .lettere-alfabeto {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 480px;
+    width: 440px;
     gap: 5px;
     flex-wrap: wrap;
+    animation: fadeIn 4s;
+    /* animation-delay: 3s; */
 }
 
 .lettera-alfabeto {
     font-size: 20px;
     height: 40px;
     width: 40px;
+    background-color: purple;
+    color: white;
+    border-radius: 2px;
+}
+
+.lettera-alfabeto:disabled {
+    background-color: grey;
 }
 
 .lettera{
-    width: 10px;
-    height: 10px;
-    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
 
-.hidden{
+.hidden-lettera{
     border-bottom: 2px solid white;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     font-size: 0px;
-    
+    animation: fadeIn 6s;
+    /* animation-delay: 6s; */
+}
+
+.lettera-non-indovinata{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: red;
 }
 
 
@@ -38,4 +65,68 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+#errori {
+    color: red;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 3s;
+}
+
+.end .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.end .btn button, .end .btn a {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.end .punteggio {
+    font-size: 15px;
+    color: white;
+}
+
+.end .btn button:hover, .end .btn a:hover {
+    text-decoration: underline;
+}
+
+#you-lose {
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(../assets/images/hangman-gameover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+}
+
+#you-win {
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(../assets/images/hangman-win.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
 }
